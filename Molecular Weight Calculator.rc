@@ -1,0 +1,308 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MwtABOUTBOX DIALOGEX 0, 0, 235, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Molecular Weight Calculator 2020"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Molecular Weight Calculator Version 2020",IDC_STATIC,40,10,132,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2020",IDC_STATIC,52,18,80,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "Programmed by Frank Antolasic",IDC_STATIC,45,27,109,11
+    LTEXT           "Example formula :  C12H25N2Cl2",IDC_STATIC,7,68,193,12
+    LTEXT           "Brackets are OK eg: C10H22(OH)3",IDC_STATIC,7,78,213,11
+    LTEXT           "Common abreviations are OK eg:  Ph for phenyl, Me for methyl etc",IDC_STATIC,7,88,214,11
+    LTEXT           "Peptide three letter codes are OK eg: Pro, Gly, Glu etc",IDC_STATIC,7,98,213,12
+    LTEXT           "Periods are OK  eg C6H5O.5HCl",IDC_STATIC,7,108,208,11
+END
+
+IDD_MOLECULARWEIGHTCALCULATOR_DIALOG DIALOGEX 0, 0, 573, 342
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Molecular Weight Calculator ver 2020"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITFORMULA,48,7,518,16,ES_AUTOHSCROLL
+    LTEXT           "Formula:",IDC_STATIC,52,89,31,9,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,180,24,386,156
+    PUSHBUTTON      "Calculate",IDC_BUTTONCalculate,4,7,40,14
+    PUSHBUTTON      "Print",IDC_BUTTONPrint,4,26,40,14
+    PUSHBUTTON      "SaveAs",IDC_BUTTONSaveAs,4,83,40,14
+    GROUPBOX        "",IDC_SAMPLE,4,182,562,153,NOT WS_VISIBLE,WS_EX_TRANSPARENT
+    LISTBOX         IDC_LIST2,154,29,8,10,LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Copy table",IDC_COPY_BUTTON,4,102,40,14
+    EDITTEXT        IDC_EDIT_INTENSITY_LIMIT,89,27,63,16,ES_AUTOHSCROLL
+    LTEXT           "Intensity Limit",IDC_STATIC,57,26,32,16
+    LTEXT           "",IDC_STATIC_FORMULA,87,91,49,9,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Print setup",IDC_PRINT_SETUP,4,64,40,14
+    PUSHBUTTON      "HELP",IDC_HELPBUTTON,4,140,40,14
+    LTEXT           "",IDC_STATICMassPercent,52,133,108,39
+    LTEXT           "",IDC_STATICAverageMwt,49,113,116,8
+    PUSHBUTTON      "Print Table",IDC_BUTTONPRINTTABLE,4,45,40,14
+    LTEXT           "",IDC_STATICMolecularWeight,50,103,117,8
+    GROUPBOX        "",IDC_STATIC,47,88,133,95
+    LTEXT           "Mass Percent ",IDC_STATIC,51,125,98,8
+    PUSHBUTTON      "Copy Spec",IDC_COPY_SPECTRUM,4,121,39,14
+    GROUPBOX        "Charge state",IDC_STATIC,47,50,73,38
+    CONTROL         "Neutral",IDC_RADIO1NEUTRAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,56,58,39,10
+    CONTROL         "Positive",IDC_RADIO2POSITIVE,"Button",BS_AUTORADIOBUTTON,56,67,41,10
+    CONTROL         "Negative",IDC_RADIO3NEGATIVE,"Button",BS_AUTORADIOBUTTON,56,76,45,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Programmed by Frank Antolasic"
+            VALUE "CompanyName", "Antolasic Software"
+            VALUE "FileDescription", "Molecular Weight Calculator"
+            VALUE "FileVersion", "5"
+            VALUE "InternalName", "Molecular Weight Calculator.exe"
+            VALUE "LegalCopyright", "Wsearch Software.  All rights reserved."
+            VALUE "OriginalFilename", "Molecular Weight Calculator.exe"
+            VALUE "ProductName", "Molecular Weight Calculator"
+            VALUE "ProductVersion", "5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MwtABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_MOLECULARWEIGHTCALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 566
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MOLECULARWEIGHTCALCULATOR_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MwtABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About Molecular Weight Calculator..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PRINT_LISTCTRL DIALOGEX 0, 0, 271, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Print Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,208,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,208,24,50,14
+    PUSHBUTTON      "Header Font",IDC_BUTTONHEADER,62,7,49,17
+    PUSHBUTTON      "Footer Font",IDC_BUTTONFOOTER,33,162,48,17
+    CONTROL         "Print in Landscape",IDC_CHECKPL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,135,83,11
+    CONTROL         "Print column seperator",IDC_CHECKCS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,79,87,11
+    CONTROL         "Print line seperator",IDC_CHECKLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,93,74,11
+    CONTROL         "Resize columns",IDC_CHECKRC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,106,68,11
+    CONTROL         "Print Header",IDC_CHECKPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,50,58,11
+    CONTROL         "Truncate Columns",IDC_CHECKTC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,119,87,11
+    GROUPBOX        "Sample",IDC_SAMPLE,4,21,156,139
+    CONTROL         "Print Footer",IDC_CHECKPF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,63,63,11
+    CONTROL         "Print Header Bkgd (red)",IDC_CHECKPHR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,149,87,11
+    CONTROL         "Print Footer Bkgd (Red)",IDC_CHECKPFR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,167,162,88,11
+    PUSHBUTTON      "List Font",IDC_BUTTONLISTF,111,162,42,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PRINT_LISTCTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Molecular Weight Calculator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Molecular Weight Calculator.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DOWN                BITMAP                  "res\\bitmap1.bmp"
+
+IDB_UP                  BITMAP                  "res\\bitmap2.bmp"
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Molecular Weight Calculator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
